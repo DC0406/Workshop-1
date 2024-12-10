@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_deck" xml:lang="en-US">
+<title>Deck Class Reference</title>
+<indexterm><primary>Deck</primary></indexterm>
+<para>
+
+<para><link linkend="_class_deck">Deck</link> class represents a collection of cards in a vector format. Intended to represent a deck, however can be used for stock piles, discard piles, and other uses. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;Deck.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_deck_1a57ae1cb4ac6fd61c249cefb2db85eb99">Deck</link> ()</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_deck_1a6e84b60abbfc3ef41ff8224e3ead95b0">getSize</link> ()</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_deck_1a0233c3d2ab48074ba0bb196d958d9dff">isEmpty</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_deck_1ae5a1e52ab00ae5924f2bc6b730dba3eb">shuffle</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_deck_1a561639507d28e89d055136368801da46">clear</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_deck_1a7e0cb06cb047f85db9ceabbb9af19d60">fillDeck</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_deck_1ade85b6e1e28206bc5ee23b86c5d5997f">addCard</link> (<link linkend="_class_card">Card</link> new_card)</para>
+</listitem>
+            <listitem><para><link linkend="_class_card">Card</link> <link linkend="_class_deck_1a215ece1ad7f9add807d59c8d9c8ecb4b">peekTopCard</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_card">Card</link> <link linkend="_class_deck_1ac2f23c233d9e658439ff50290c08c9e4">peekCard</link> (int index)</para>
+</listitem>
+            <listitem><para><link linkend="_class_card">Card</link> <link linkend="_class_deck_1a826f189f1b68634f1edf29162567e40e">getTopCard</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_card">Card</link> <link linkend="_class_deck_1ad027327a4ca027e2c150b2290115a0fc">getCard</link> (int index)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><link linkend="_class_deck">Deck</link> class represents a collection of cards in a vector format. Intended to represent a deck, however can be used for stock piles, discard piles, and other uses. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_deck_1a57ae1cb4ac6fd61c249cefb2db85eb99"/><section>
+    <title>Deck()</title>
+<indexterm><primary>Deck</primary><secondary>Deck</secondary></indexterm>
+<indexterm><primary>Deck</primary><secondary>Deck</secondary></indexterm>
+<para><computeroutput>Deck::Deck ( )</computeroutput></para>
+<para>Constructor to make a new deck. Pre-fills the deck with ordered cards by default. </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_deck_1ade85b6e1e28206bc5ee23b86c5d5997f"/><section>
+    <title>addCard()</title>
+<indexterm><primary>addCard</primary><secondary>Deck</secondary></indexterm>
+<indexterm><primary>Deck</primary><secondary>addCard</secondary></indexterm>
+<para><computeroutput>void Deck::addCard (<link linkend="_class_card">Card</link> new_card)</computeroutput></para>
+<para>Adds a new card to the deck. <link linkend="_class_card">Card</link> is placed at the back of the deck vector. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>new_card</entry><entry>
+<para>New card object to be added to the deck. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_deck_1a561639507d28e89d055136368801da46"/><section>
+    <title>clear()</title>
+<indexterm><primary>clear</primary><secondary>Deck</secondary></indexterm>
+<indexterm><primary>Deck</primary><secondary>clear</secondary></indexterm>
+<para><computeroutput>void Deck::clear ( )</computeroutput></para>
+<para>Removes all cards from the deck. </para>
+</section>
+<anchor xml:id="_class_deck_1a7e0cb06cb047f85db9ceabbb9af19d60"/><section>
+    <title>fillDeck()</title>
+<indexterm><primary>fillDeck</primary><secondary>Deck</secondary></indexterm>
+<indexterm><primary>Deck</primary><secondary>fillDeck</secondary></indexterm>
+<para><computeroutput>void Deck::fillDeck ( )</computeroutput></para>
+<para>Fills the deck with all 52 cards. Does not shuffle the deck. </para>
+</section>
+<anchor xml:id="_class_deck_1ad027327a4ca027e2c150b2290115a0fc"/><section>
+    <title>getCard()</title>
+<indexterm><primary>getCard</primary><secondary>Deck</secondary></indexterm>
+<indexterm><primary>Deck</primary><secondary>getCard</secondary></indexterm>
+<para><computeroutput><link linkend="_class_card">Card</link> Deck::getCard (int index)</computeroutput></para>
+<para>Removes and returns the card at the given index. Important to note is the card will be removed from the deck. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>index</entry><entry>
+<para>The index of the desired card. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para><link linkend="_class_card">Card</link> object of the card at the given index. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_deck_1a6e84b60abbfc3ef41ff8224e3ead95b0"/><section>
+    <title>getSize()</title>
+<indexterm><primary>getSize</primary><secondary>Deck</secondary></indexterm>
+<indexterm><primary>Deck</primary><secondary>getSize</secondary></indexterm>
+<para><computeroutput>int Deck::getSize ( )</computeroutput></para>
+<para>Gets the size of the deck. <formalpara><title>Returns</title>
+
+<para>The number of cards in the deck. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_deck_1a826f189f1b68634f1edf29162567e40e"/><section>
+    <title>getTopCard()</title>
+<indexterm><primary>getTopCard</primary><secondary>Deck</secondary></indexterm>
+<indexterm><primary>Deck</primary><secondary>getTopCard</secondary></indexterm>
+<para><computeroutput><link linkend="_class_card">Card</link> Deck::getTopCard ( )</computeroutput></para>
+<para>Removes and returns the card at the top of the deck. Will return the last card in the vector. Important to note is the card will be removed from the deck. <formalpara><title>Returns</title>
+
+<para><link linkend="_class_card">Card</link> object of the top card in the deck. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_deck_1a0233c3d2ab48074ba0bb196d958d9dff"/><section>
+    <title>isEmpty()</title>
+<indexterm><primary>isEmpty</primary><secondary>Deck</secondary></indexterm>
+<indexterm><primary>Deck</primary><secondary>isEmpty</secondary></indexterm>
+<para><computeroutput>bool Deck::isEmpty ( )</computeroutput></para>
+<para>Returns true/false depending on whether there are any cards in the deck. <formalpara><title>Returns</title>
+
+<para>boolean flag of if the deck is empty. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_deck_1ac2f23c233d9e658439ff50290c08c9e4"/><section>
+    <title>peekCard()</title>
+<indexterm><primary>peekCard</primary><secondary>Deck</secondary></indexterm>
+<indexterm><primary>Deck</primary><secondary>peekCard</secondary></indexterm>
+<para><computeroutput><link linkend="_class_card">Card</link> Deck::peekCard (int index)</computeroutput></para>
+<para>Returns the card at the given index. Important to note is the card will not be removed from the deck. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>index</entry><entry>
+<para>The index of the desired card. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para><link linkend="_class_card">Card</link> object of the card at the given index. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_deck_1a215ece1ad7f9add807d59c8d9c8ecb4b"/><section>
+    <title>peekTopCard()</title>
+<indexterm><primary>peekTopCard</primary><secondary>Deck</secondary></indexterm>
+<indexterm><primary>Deck</primary><secondary>peekTopCard</secondary></indexterm>
+<para><computeroutput><link linkend="_class_card">Card</link> Deck::peekTopCard ( )</computeroutput></para>
+<para>Returns the card at the top of deck. Will return the last card in the vector. Important to note is the card will not be removed from the deck. <formalpara><title>Returns</title>
+
+<para><link linkend="_class_card">Card</link> object of the top card in the deck. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_deck_1ae5a1e52ab00ae5924f2bc6b730dba3eb"/><section>
+    <title>shuffle()</title>
+<indexterm><primary>shuffle</primary><secondary>Deck</secondary></indexterm>
+<indexterm><primary>Deck</primary><secondary>shuffle</secondary></indexterm>
+<para><computeroutput>void Deck::shuffle ( )</computeroutput></para>
+<para>Shuffles the deck into a pseudo-random order. Uses the default_random_engine (see <link xlink:href="https://cplusplus.com/reference/random/default_random_engine/">https://cplusplus.com/reference/random/default_random_engine/</link>) to set the seed for shuffle algorithm. </para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+Crazy Eights/template/Deck.hCrazy Eights/template/Deck.cpp</section>
+</section>

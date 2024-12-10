@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__card_8h_source" xml:lang="en-US">
+<title>Card.h</title>
+<indexterm><primary>Crazy Eights/template/Card.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+2 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+3 
+4 <emphasis role="keyword">using&#32;namespace&#32;</emphasis>std;
+5 
+6 
+7 
+11 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_card">Card</link>
+12 {
+13 <emphasis role="keyword">private</emphasis>:
+17 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;rank;
+21 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;suit;
+22 <emphasis role="keyword">public</emphasis>:
+28 &#32;&#32;&#32;&#32;<link linkend="_class_card_1a7baaf66f84b781cb4ea2f434b195a7d4">Card</link>(<emphasis role="keywordtype">int</emphasis>&#32;init_rank,&#32;<emphasis role="keywordtype">string</emphasis>&#32;init_suit);
+29 
+34 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_card_1ab11d37fe0155982e834cd4c413322973">getRank</link>();
+35 
+40 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_card_1a6bda7d706eb87b009c94ae2a9654f6d9">getSuit</link>();
+41 
+46 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_card_1ae5707270fd3ba3e432979f5d1e674940">setRank</link>(<emphasis role="keywordtype">int</emphasis>&#32;new_rank);
+52 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_card_1ab689370ed2a5d9fa1aae8205389b0f8d">setSuit</link>(<emphasis role="keywordtype">string</emphasis>&#32;new_suit);
+53 
+59 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_card_1a40725f94d140308b3ec535ad00fd033d">toString</link>();
+60 };
+61 
+</programlisting></section>

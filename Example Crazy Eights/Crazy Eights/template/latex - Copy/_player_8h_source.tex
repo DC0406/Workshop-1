@@ -1,0 +1,42 @@
+\doxysection{Player.\+h}
+\hypertarget{_player_8h_source}{}\label{_player_8h_source}\index{Crazy Eights/template/Player.h@{Crazy Eights/template/Player.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Card.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_player}{Player}}}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{string}\ name;}
+\DoxyCodeLine{00024\ \ \ \ \ vector<Card>\ hand;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ score;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{Player}}();}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_player_af9a6045fa96f736664c4eab4caa5e8e5}{getName}}();}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_abd8d50b28edbe319e4b584b8e2840df2}{setName}}(\textcolor{keywordtype}{string}\ new\_name);}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_player_a349e345c332c57d681982ce06a1ba7e9}{getHandSize}}();}
+\DoxyCodeLine{00055\ \ \ \ \ vector<Card>\ \mbox{\hyperlink{class_player_a2753c9de00cd7a69929a24393e50d587}{getHand}}();}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a5715b0ace30c905ae79642e76a5437b4}{clearHand}}();}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_player_a74f63b5d2d98396bb0bb2e40958abf71}{isEmpty}}();}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00072\ \ \ \ \ \mbox{\hyperlink{class_card}{Card}}\ \mbox{\hyperlink{class_player_a80f84537be09ea913c5eea2e5b1ee5f3}{peekCard}}(\textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00078\ \ \ \ \ \mbox{\hyperlink{class_card}{Card}}\ \mbox{\hyperlink{class_player_a7b49f3469057c697779eec1baf69d264}{getCard}}(\textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a98d533161ecd23a97c7395f1d27769db}{addCard}}(\mbox{\hyperlink{class_card}{Card}}\ new\_card);}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_player_a6bd45861da62c3f312f6af562872df39}{sumHand}}();}
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_ae17df212fe69f5c493f0d083cb789e79}{outputHand}}();}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a3fd83a4baad6c02cf4728ebdc4b37367}{changeScoreBy}}(\textcolor{keywordtype}{int}\ toAdd);}
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a70cf97b3bdeac621fad1a493644df96c}{setScore}}(\textcolor{keywordtype}{int}\ newScore);}
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_player_a97e5447778ae6c384eedc532dcd8431d}{getScore}}();}
+\DoxyCodeLine{00110\ \};}
+
+\end{DoxyCode}

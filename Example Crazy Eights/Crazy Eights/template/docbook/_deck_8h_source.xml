@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__deck_8h_source" xml:lang="en-US">
+<title>Deck.h</title>
+<indexterm><primary>Crazy Eights/template/Deck.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+2 <emphasis role="preprocessor">#include&#32;&lt;vector&gt;</emphasis>
+3 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+4 <emphasis role="preprocessor">#include&#32;&quot;Card.h&quot;</emphasis>
+5 
+6 <emphasis role="keyword">using&#32;namespace&#32;</emphasis>std;
+7 
+12 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_deck">Deck</link>
+13 {
+14 <emphasis role="keyword">private</emphasis>:
+18 &#32;&#32;&#32;&#32;vector&lt;Card&gt;&#32;deck_vector;
+19 
+20 <emphasis role="keyword">public</emphasis>:
+24 &#32;&#32;&#32;&#32;<link linkend="_class_deck_1a57ae1cb4ac6fd61c249cefb2db85eb99">Deck</link>();
+25 
+30 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_deck_1a6e84b60abbfc3ef41ff8224e3ead95b0">getSize</link>();
+31 
+36 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_deck_1a0233c3d2ab48074ba0bb196d958d9dff">isEmpty</link>();
+37 
+42 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_deck_1ae5a1e52ab00ae5924f2bc6b730dba3eb">shuffle</link>();
+43 
+47 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_deck_1a561639507d28e89d055136368801da46">clear</link>();
+48 
+52 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_deck_1a7e0cb06cb047f85db9ceabbb9af19d60">fillDeck</link>();
+53 
+58 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_deck_1ade85b6e1e28206bc5ee23b86c5d5997f">addCard</link>(<link linkend="_class_card">Card</link>&#32;new_card);
+59 
+64 &#32;&#32;&#32;&#32;<link linkend="_class_card">Card</link>&#32;<link linkend="_class_deck_1a215ece1ad7f9add807d59c8d9c8ecb4b">peekTopCard</link>();
+65 
+71 &#32;&#32;&#32;&#32;<link linkend="_class_card">Card</link>&#32;<link linkend="_class_deck_1ac2f23c233d9e658439ff50290c08c9e4">peekCard</link>(<emphasis role="keywordtype">int</emphasis>&#32;index);
+72 
+77 &#32;&#32;&#32;&#32;<link linkend="_class_card">Card</link>&#32;<link linkend="_class_deck_1a826f189f1b68634f1edf29162567e40e">getTopCard</link>();
+78 
+84 &#32;&#32;&#32;&#32;<link linkend="_class_card">Card</link>&#32;<link linkend="_class_deck_1ad027327a4ca027e2c150b2290115a0fc">getCard</link>(<emphasis role="keywordtype">int</emphasis>&#32;index);
+85 
+86 };
+87 
+</programlisting></section>

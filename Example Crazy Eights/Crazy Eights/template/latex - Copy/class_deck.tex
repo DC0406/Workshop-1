@@ -1,0 +1,145 @@
+\doxysection{Deck Class Reference}
+\hypertarget{class_deck}{}\label{class_deck}\index{Deck@{Deck}}
+
+
+\doxylink{class_deck}{Deck} class represents a collection of cards in a vector format. Intended to represent a deck, however can be used for stock piles, discard piles, and other uses.  
+
+
+
+
+{\ttfamily \#include $<$template/Deck.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_deck_a57ae1cb4ac6fd61c249cefb2db85eb99}{Deck}} ()
+\item 
+int \mbox{\hyperlink{class_deck_a6e84b60abbfc3ef41ff8224e3ead95b0}{get\+Size}} ()
+\item 
+bool \mbox{\hyperlink{class_deck_a0233c3d2ab48074ba0bb196d958d9dff}{is\+Empty}} ()
+\item 
+void \mbox{\hyperlink{class_deck_ae5a1e52ab00ae5924f2bc6b730dba3eb}{shuffle}} ()
+\item 
+void \mbox{\hyperlink{class_deck_a561639507d28e89d055136368801da46}{clear}} ()
+\item 
+void \mbox{\hyperlink{class_deck_a7e0cb06cb047f85db9ceabbb9af19d60}{fill\+Deck}} ()
+\item 
+void \mbox{\hyperlink{class_deck_ade85b6e1e28206bc5ee23b86c5d5997f}{add\+Card}} (\mbox{\hyperlink{class_card}{Card}} new\+\_\+card)
+\item 
+\mbox{\hyperlink{class_card}{Card}} \mbox{\hyperlink{class_deck_a215ece1ad7f9add807d59c8d9c8ecb4b}{peek\+Top\+Card}} ()
+\item 
+\mbox{\hyperlink{class_card}{Card}} \mbox{\hyperlink{class_deck_ac2f23c233d9e658439ff50290c08c9e4}{peek\+Card}} (int index)
+\item 
+\mbox{\hyperlink{class_card}{Card}} \mbox{\hyperlink{class_deck_a826f189f1b68634f1edf29162567e40e}{get\+Top\+Card}} ()
+\item 
+\mbox{\hyperlink{class_card}{Card}} \mbox{\hyperlink{class_deck_ad027327a4ca027e2c150b2290115a0fc}{get\+Card}} (int index)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_deck}{Deck} class represents a collection of cards in a vector format. Intended to represent a deck, however can be used for stock piles, discard piles, and other uses. 
+
+\doxysubsection{Constructor Documentation}
+\Hypertarget{class_deck_a57ae1cb4ac6fd61c249cefb2db85eb99}\index{Deck@{Deck}!Deck@{Deck}}
+\index{Deck@{Deck}!Deck@{Deck}}
+\doxysubsubsection{\texorpdfstring{Deck()}{Deck()}}
+{\footnotesize\ttfamily \label{class_deck_a57ae1cb4ac6fd61c249cefb2db85eb99} 
+Deck\+::\+Deck (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Constructor to make a new deck. Pre-\/fills the deck with ordered cards by default. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_deck_ade85b6e1e28206bc5ee23b86c5d5997f}\index{Deck@{Deck}!addCard@{addCard}}
+\index{addCard@{addCard}!Deck@{Deck}}
+\doxysubsubsection{\texorpdfstring{addCard()}{addCard()}}
+{\footnotesize\ttfamily \label{class_deck_ade85b6e1e28206bc5ee23b86c5d5997f} 
+void Deck\+::add\+Card (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_card}{Card}}}]{new\+\_\+card}{}\end{DoxyParamCaption})}
+
+Adds a new card to the deck. \doxylink{class_card}{Card} is placed at the back of the deck vector. 
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+card} & New card object to be added to the deck. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_deck_a561639507d28e89d055136368801da46}\index{Deck@{Deck}!clear@{clear}}
+\index{clear@{clear}!Deck@{Deck}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{class_deck_a561639507d28e89d055136368801da46} 
+void Deck\+::clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Removes all cards from the deck. \Hypertarget{class_deck_a7e0cb06cb047f85db9ceabbb9af19d60}\index{Deck@{Deck}!fillDeck@{fillDeck}}
+\index{fillDeck@{fillDeck}!Deck@{Deck}}
+\doxysubsubsection{\texorpdfstring{fillDeck()}{fillDeck()}}
+{\footnotesize\ttfamily \label{class_deck_a7e0cb06cb047f85db9ceabbb9af19d60} 
+void Deck\+::fill\+Deck (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Fills the deck with all 52 cards. Does not shuffle the deck. \Hypertarget{class_deck_ad027327a4ca027e2c150b2290115a0fc}\index{Deck@{Deck}!getCard@{getCard}}
+\index{getCard@{getCard}!Deck@{Deck}}
+\doxysubsubsection{\texorpdfstring{getCard()}{getCard()}}
+{\footnotesize\ttfamily \label{class_deck_ad027327a4ca027e2c150b2290115a0fc} 
+\mbox{\hyperlink{class_card}{Card}} Deck\+::get\+Card (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+Removes and returns the card at the given index. Important to note is the card will be removed from the deck. 
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the desired card. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_card}{Card} object of the card at the given index. 
+\end{DoxyReturn}
+\Hypertarget{class_deck_a6e84b60abbfc3ef41ff8224e3ead95b0}\index{Deck@{Deck}!getSize@{getSize}}
+\index{getSize@{getSize}!Deck@{Deck}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily \label{class_deck_a6e84b60abbfc3ef41ff8224e3ead95b0} 
+int Deck\+::get\+Size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the size of the deck. \begin{DoxyReturn}{Returns}
+The number of cards in the deck. 
+\end{DoxyReturn}
+\Hypertarget{class_deck_a826f189f1b68634f1edf29162567e40e}\index{Deck@{Deck}!getTopCard@{getTopCard}}
+\index{getTopCard@{getTopCard}!Deck@{Deck}}
+\doxysubsubsection{\texorpdfstring{getTopCard()}{getTopCard()}}
+{\footnotesize\ttfamily \label{class_deck_a826f189f1b68634f1edf29162567e40e} 
+\mbox{\hyperlink{class_card}{Card}} Deck\+::get\+Top\+Card (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Removes and returns the card at the top of the deck. Will return the last card in the vector. Important to note is the card will be removed from the deck. \begin{DoxyReturn}{Returns}
+\doxylink{class_card}{Card} object of the top card in the deck. 
+\end{DoxyReturn}
+\Hypertarget{class_deck_a0233c3d2ab48074ba0bb196d958d9dff}\index{Deck@{Deck}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Deck@{Deck}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily \label{class_deck_a0233c3d2ab48074ba0bb196d958d9dff} 
+bool Deck\+::is\+Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true/false depending on whether there are any cards in the deck. \begin{DoxyReturn}{Returns}
+boolean flag of if the deck is empty. 
+\end{DoxyReturn}
+\Hypertarget{class_deck_ac2f23c233d9e658439ff50290c08c9e4}\index{Deck@{Deck}!peekCard@{peekCard}}
+\index{peekCard@{peekCard}!Deck@{Deck}}
+\doxysubsubsection{\texorpdfstring{peekCard()}{peekCard()}}
+{\footnotesize\ttfamily \label{class_deck_ac2f23c233d9e658439ff50290c08c9e4} 
+\mbox{\hyperlink{class_card}{Card}} Deck\+::peek\+Card (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+Returns the card at the given index. Important to note is the card will not be removed from the deck. 
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the desired card. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_card}{Card} object of the card at the given index. 
+\end{DoxyReturn}
+\Hypertarget{class_deck_a215ece1ad7f9add807d59c8d9c8ecb4b}\index{Deck@{Deck}!peekTopCard@{peekTopCard}}
+\index{peekTopCard@{peekTopCard}!Deck@{Deck}}
+\doxysubsubsection{\texorpdfstring{peekTopCard()}{peekTopCard()}}
+{\footnotesize\ttfamily \label{class_deck_a215ece1ad7f9add807d59c8d9c8ecb4b} 
+\mbox{\hyperlink{class_card}{Card}} Deck\+::peek\+Top\+Card (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the card at the top of deck. Will return the last card in the vector. Important to note is the card will not be removed from the deck. \begin{DoxyReturn}{Returns}
+\doxylink{class_card}{Card} object of the top card in the deck. 
+\end{DoxyReturn}
+\Hypertarget{class_deck_ae5a1e52ab00ae5924f2bc6b730dba3eb}\index{Deck@{Deck}!shuffle@{shuffle}}
+\index{shuffle@{shuffle}!Deck@{Deck}}
+\doxysubsubsection{\texorpdfstring{shuffle()}{shuffle()}}
+{\footnotesize\ttfamily \label{class_deck_ae5a1e52ab00ae5924f2bc6b730dba3eb} 
+void Deck\+::shuffle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Shuffles the deck into a pseudo-\/random order. Uses the default\+\_\+random\+\_\+engine (see \href{https://cplusplus.com/reference/random/default_random_engine/}{\texttt{ https\+://cplusplus.\+com/reference/random/default\+\_\+random\+\_\+engine/}}) to set the seed for shuffle algorithm. 

@@ -1,0 +1,123 @@
+\begin{theindex}
+
+  \item {addCard}
+    \subitem {Deck}, \hyperpage{7}
+    \subitem {Player}, \hyperpage{10}
+
+  \indexspace
+
+  \item {Card}, \hyperpage{5}
+    \subitem {Card}, \hyperpage{5}
+    \subitem {getRank}, \hyperpage{6}
+    \subitem {getSuit}, \hyperpage{6}
+    \subitem {setRank}, \hyperpage{6}
+    \subitem {setSuit}, \hyperpage{6}
+    \subitem {toString}, \hyperpage{6}
+  \item {changeScoreBy}
+    \subitem {Player}, \hyperpage{11}
+  \item {clear}
+    \subitem {Deck}, \hyperpage{8}
+  \item {clearHand}
+    \subitem {Player}, \hyperpage{11}
+  \item {Crazy Eights/template/Card.h}, \hyperpage{15}
+  \item {Crazy Eights/template/Deck.h}, \hyperpage{15}
+  \item {Crazy Eights/template/Player.h}, \hyperpage{16}
+
+  \indexspace
+
+  \item {Deck}, \hyperpage{7}
+    \subitem {addCard}, \hyperpage{7}
+    \subitem {clear}, \hyperpage{8}
+    \subitem {Deck}, \hyperpage{7}
+    \subitem {fillDeck}, \hyperpage{8}
+    \subitem {getCard}, \hyperpage{8}
+    \subitem {getSize}, \hyperpage{8}
+    \subitem {getTopCard}, \hyperpage{8}
+    \subitem {isEmpty}, \hyperpage{9}
+    \subitem {peekCard}, \hyperpage{9}
+    \subitem {peekTopCard}, \hyperpage{9}
+    \subitem {shuffle}, \hyperpage{9}
+
+  \indexspace
+
+  \item {fillDeck}
+    \subitem {Deck}, \hyperpage{8}
+
+  \indexspace
+
+  \item {getCard}
+    \subitem {Deck}, \hyperpage{8}
+    \subitem {Player}, \hyperpage{11}
+  \item {getHand}
+    \subitem {Player}, \hyperpage{11}
+  \item {getHandSize}
+    \subitem {Player}, \hyperpage{11}
+  \item {getName}
+    \subitem {Player}, \hyperpage{12}
+  \item {getRank}
+    \subitem {Card}, \hyperpage{6}
+  \item {getScore}
+    \subitem {Player}, \hyperpage{12}
+  \item {getSize}
+    \subitem {Deck}, \hyperpage{8}
+  \item {getSuit}
+    \subitem {Card}, \hyperpage{6}
+  \item {getTopCard}
+    \subitem {Deck}, \hyperpage{8}
+
+  \indexspace
+
+  \item {isEmpty}
+    \subitem {Deck}, \hyperpage{9}
+    \subitem {Player}, \hyperpage{12}
+
+  \indexspace
+
+  \item {outputHand}
+    \subitem {Player}, \hyperpage{12}
+
+  \indexspace
+
+  \item {peekCard}
+    \subitem {Deck}, \hyperpage{9}
+    \subitem {Player}, \hyperpage{12}
+  \item {peekTopCard}
+    \subitem {Deck}, \hyperpage{9}
+  \item {Player}, \hyperpage{10}
+    \subitem {addCard}, \hyperpage{10}
+    \subitem {changeScoreBy}, \hyperpage{11}
+    \subitem {clearHand}, \hyperpage{11}
+    \subitem {getCard}, \hyperpage{11}
+    \subitem {getHand}, \hyperpage{11}
+    \subitem {getHandSize}, \hyperpage{11}
+    \subitem {getName}, \hyperpage{12}
+    \subitem {getScore}, \hyperpage{12}
+    \subitem {isEmpty}, \hyperpage{12}
+    \subitem {outputHand}, \hyperpage{12}
+    \subitem {peekCard}, \hyperpage{12}
+    \subitem {Player}, \hyperpage{10}
+    \subitem {setName}, \hyperpage{13}
+    \subitem {setScore}, \hyperpage{13}
+    \subitem {sumHand}, \hyperpage{13}
+
+  \indexspace
+
+  \item {setName}
+    \subitem {Player}, \hyperpage{13}
+  \item {setRank}
+    \subitem {Card}, \hyperpage{6}
+  \item {setScore}
+    \subitem {Player}, \hyperpage{13}
+  \item {setSuit}
+    \subitem {Card}, \hyperpage{6}
+  \item {shuffle}
+    \subitem {Deck}, \hyperpage{9}
+  \item {sumHand}
+    \subitem {Player}, \hyperpage{13}
+
+  \indexspace
+
+  \item {toString}
+    \subitem {Card}, \hyperpage{6}
+
+\end{theindex}

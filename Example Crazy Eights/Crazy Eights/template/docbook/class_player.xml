@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_player" xml:lang="en-US">
+<title>Player Class Reference</title>
+<indexterm><primary>Player</primary></indexterm>
+<para>
+
+<para><link linkend="_class_player">Player</link> class represents a single player, either human or bot. <link linkend="_class_player">Player</link> has a name, a hand, and a score. Class does not get input from terminal directly. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;Player.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_player_1affe0cc3cb714f6deb4e62f0c0d3f1fd8">Player</link> ()</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_player_1af9a6045fa96f736664c4eab4caa5e8e5">getName</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_player_1abd8d50b28edbe319e4b584b8e2840df2">setName</link> (string new_name)</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_player_1a349e345c332c57d681982ce06a1ba7e9">getHandSize</link> ()</para>
+</listitem>
+            <listitem><para>vector&lt; <link linkend="_class_card">Card</link> &gt; <link linkend="_class_player_1a2753c9de00cd7a69929a24393e50d587">getHand</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_player_1a5715b0ace30c905ae79642e76a5437b4">clearHand</link> ()</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_player_1a74f63b5d2d98396bb0bb2e40958abf71">isEmpty</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_card">Card</link> <link linkend="_class_player_1a80f84537be09ea913c5eea2e5b1ee5f3">peekCard</link> (int index)</para>
+</listitem>
+            <listitem><para><link linkend="_class_card">Card</link> <link linkend="_class_player_1a7b49f3469057c697779eec1baf69d264">getCard</link> (int index)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_player_1a98d533161ecd23a97c7395f1d27769db">addCard</link> (<link linkend="_class_card">Card</link> new_card)</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_player_1a6bd45861da62c3f312f6af562872df39">sumHand</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_player_1ae17df212fe69f5c493f0d083cb789e79">outputHand</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_player_1a3fd83a4baad6c02cf4728ebdc4b37367">changeScoreBy</link> (int toAdd)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_player_1a70cf97b3bdeac621fad1a493644df96c">setScore</link> (int newScore)</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_player_1a97e5447778ae6c384eedc532dcd8431d">getScore</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><link linkend="_class_player">Player</link> class represents a single player, either human or bot. <link linkend="_class_player">Player</link> has a name, a hand, and a score. Class does not get input from terminal directly. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_player_1affe0cc3cb714f6deb4e62f0c0d3f1fd8"/><section>
+    <title>Player()</title>
+<indexterm><primary>Player</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>Player</secondary></indexterm>
+<para><computeroutput>Player::Player ( )</computeroutput></para>
+<para>Constructor to create a <link linkend="_class_player">Player</link>. Sets player name to &quot;Unamed Player&quot;, hand starts empty, and score starts at 0. </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_player_1a98d533161ecd23a97c7395f1d27769db"/><section>
+    <title>addCard()</title>
+<indexterm><primary>addCard</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>addCard</secondary></indexterm>
+<para><computeroutput>void Player::addCard (<link linkend="_class_card">Card</link> new_card)</computeroutput></para>
+<para>Adds a new card to the player&apos;s hand. <link linkend="_class_card">Card</link> is placed at the back of the hand vector. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>new_card</entry><entry>
+<para>New card object to be added to the player&apos;s hand. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_player_1a3fd83a4baad6c02cf4728ebdc4b37367"/><section>
+    <title>changeScoreBy()</title>
+<indexterm><primary>changeScoreBy</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>changeScoreBy</secondary></indexterm>
+<para><computeroutput>void Player::changeScoreBy (int toAdd)</computeroutput></para>
+<para>Alter the player&apos;s score by given integer. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>toAdd</entry><entry>
+<para>Score to add to player&apos;s score. Score will be reduced if toAdd is negative. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_player_1a5715b0ace30c905ae79642e76a5437b4"/><section>
+    <title>clearHand()</title>
+<indexterm><primary>clearHand</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>clearHand</secondary></indexterm>
+<para><computeroutput>void Player::clearHand ( )</computeroutput></para>
+<para>Clears the player&apos;s hand. Removes all cards from the player&apos;s hand permanently. </para>
+</section>
+<anchor xml:id="_class_player_1a7b49f3469057c697779eec1baf69d264"/><section>
+    <title>getCard()</title>
+<indexterm><primary>getCard</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>getCard</secondary></indexterm>
+<para><computeroutput><link linkend="_class_card">Card</link> Player::getCard (int index)</computeroutput></para>
+<para>Removes and returns the card at the given index. Important to note is the card will be removed from the player&apos;s hand. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>index</entry><entry>
+<para>The index of the desired card. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para><link linkend="_class_card">Card</link> object of the card at the given index. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_player_1a2753c9de00cd7a69929a24393e50d587"/><section>
+    <title>getHand()</title>
+<indexterm><primary>getHand</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>getHand</secondary></indexterm>
+<para><computeroutput>vector&lt; <link linkend="_class_card">Card</link> &gt; Player::getHand ( )</computeroutput></para>
+<para>Gets the entire hand of the player. <formalpara><title>Returns</title>
+
+<para>The vector containing <link linkend="_class_card">Card</link> objects. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_player_1a349e345c332c57d681982ce06a1ba7e9"/><section>
+    <title>getHandSize()</title>
+<indexterm><primary>getHandSize</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>getHandSize</secondary></indexterm>
+<para><computeroutput>int Player::getHandSize ( )</computeroutput></para>
+<para>Gets the number of cards in the player&apos;s hand. <formalpara><title>Returns</title>
+
+<para>the size of hand. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_player_1af9a6045fa96f736664c4eab4caa5e8e5"/><section>
+    <title>getName()</title>
+<indexterm><primary>getName</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>getName</secondary></indexterm>
+<para><computeroutput>string Player::getName ( )</computeroutput></para>
+<para>Gets the player&apos;s name. <formalpara><title>Returns</title>
+
+<para>The name of the player. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_player_1a97e5447778ae6c384eedc532dcd8431d"/><section>
+    <title>getScore()</title>
+<indexterm><primary>getScore</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>getScore</secondary></indexterm>
+<para><computeroutput>int Player::getScore ( )</computeroutput></para>
+<para>Gets the player&apos;s score. <formalpara><title>Returns</title>
+
+<para><link linkend="_class_player">Player</link>&apos;s score, given as an integer. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_player_1a74f63b5d2d98396bb0bb2e40958abf71"/><section>
+    <title>isEmpty()</title>
+<indexterm><primary>isEmpty</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>isEmpty</secondary></indexterm>
+<para><computeroutput>bool Player::isEmpty ( )</computeroutput></para>
+<para>Returns true/false depending on whether there are any cards in the player&apos;s hand. <formalpara><title>Returns</title>
+
+<para>boolean flag of if the player&apos;s hand is empty. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_player_1ae17df212fe69f5c493f0d083cb789e79"/><section>
+    <title>outputHand()</title>
+<indexterm><primary>outputHand</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>outputHand</secondary></indexterm>
+<para><computeroutput>void Player::outputHand ( )</computeroutput></para>
+<para>Iterates over all card objects in the player&apos;s hand and outputs each card&apos;s toString to terminal on separate lines. </para>
+</section>
+<anchor xml:id="_class_player_1a80f84537be09ea913c5eea2e5b1ee5f3"/><section>
+    <title>peekCard()</title>
+<indexterm><primary>peekCard</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>peekCard</secondary></indexterm>
+<para><computeroutput><link linkend="_class_card">Card</link> Player::peekCard (int index)</computeroutput></para>
+<para>Returns the card at the given index. Important to note is the card will not be removed from the player&apos;s hand. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>index</entry><entry>
+<para>The index of the desired card. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para><link linkend="_class_card">Card</link> object of the card at the given index. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_player_1abd8d50b28edbe319e4b584b8e2840df2"/><section>
+    <title>setName()</title>
+<indexterm><primary>setName</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>setName</secondary></indexterm>
+<para><computeroutput>void Player::setName (string new_name)</computeroutput></para>
+<para>Sets the player&apos;s name. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>new_name</entry><entry>
+<para>The new name of the player, as a string. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_player_1a70cf97b3bdeac621fad1a493644df96c"/><section>
+    <title>setScore()</title>
+<indexterm><primary>setScore</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>setScore</secondary></indexterm>
+<para><computeroutput>void Player::setScore (int newScore)</computeroutput></para>
+<para>Set a new score, overwriting the previous score. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>newScore</entry><entry>
+<para>New player score, given as an integer. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_player_1a6bd45861da62c3f312f6af562872df39"/><section>
+    <title>sumHand()</title>
+<indexterm><primary>sumHand</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>sumHand</secondary></indexterm>
+<para><computeroutput>int Player::sumHand ( )</computeroutput></para>
+<para>Calculates and returns the sum of all ranks from cards in the player&apos;s hand. Important to note is face cards are interpreted as 11, 12, and 13. <formalpara><title>Returns</title>
+
+<para>Sum of all cards in player&apos;s hand. </para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+Crazy Eights/template/Player.hCrazy Eights/template/Player.cpp</section>
+</section>

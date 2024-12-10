@@ -1,0 +1,198 @@
+\doxysection{Player Class Reference}
+\hypertarget{class_player}{}\label{class_player}\index{Player@{Player}}
+
+
+\doxylink{class_player}{Player} class represents a single player, either human or bot. \doxylink{class_player}{Player} has a name, a hand, and a score. Class does not get input from terminal directly.  
+
+
+
+
+{\ttfamily \#include $<$template/Player.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{Player}} ()
+\item 
+string \mbox{\hyperlink{class_player_af9a6045fa96f736664c4eab4caa5e8e5}{get\+Name}} ()
+\item 
+void \mbox{\hyperlink{class_player_abd8d50b28edbe319e4b584b8e2840df2}{set\+Name}} (string new\+\_\+name)
+\item 
+int \mbox{\hyperlink{class_player_a349e345c332c57d681982ce06a1ba7e9}{get\+Hand\+Size}} ()
+\item 
+vector$<$ \mbox{\hyperlink{class_card}{Card}} $>$ \mbox{\hyperlink{class_player_a2753c9de00cd7a69929a24393e50d587}{get\+Hand}} ()
+\item 
+void \mbox{\hyperlink{class_player_a5715b0ace30c905ae79642e76a5437b4}{clear\+Hand}} ()
+\item 
+bool \mbox{\hyperlink{class_player_a74f63b5d2d98396bb0bb2e40958abf71}{is\+Empty}} ()
+\item 
+\mbox{\hyperlink{class_card}{Card}} \mbox{\hyperlink{class_player_a80f84537be09ea913c5eea2e5b1ee5f3}{peek\+Card}} (int index)
+\item 
+\mbox{\hyperlink{class_card}{Card}} \mbox{\hyperlink{class_player_a7b49f3469057c697779eec1baf69d264}{get\+Card}} (int index)
+\item 
+void \mbox{\hyperlink{class_player_a98d533161ecd23a97c7395f1d27769db}{add\+Card}} (\mbox{\hyperlink{class_card}{Card}} new\+\_\+card)
+\item 
+int \mbox{\hyperlink{class_player_a6bd45861da62c3f312f6af562872df39}{sum\+Hand}} ()
+\item 
+void \mbox{\hyperlink{class_player_ae17df212fe69f5c493f0d083cb789e79}{output\+Hand}} ()
+\item 
+void \mbox{\hyperlink{class_player_a3fd83a4baad6c02cf4728ebdc4b37367}{change\+Score\+By}} (int to\+Add)
+\item 
+void \mbox{\hyperlink{class_player_a70cf97b3bdeac621fad1a493644df96c}{set\+Score}} (int new\+Score)
+\item 
+int \mbox{\hyperlink{class_player_a97e5447778ae6c384eedc532dcd8431d}{get\+Score}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_player}{Player} class represents a single player, either human or bot. \doxylink{class_player}{Player} has a name, a hand, and a score. Class does not get input from terminal directly. 
+
+\doxysubsection{Constructor Documentation}
+\Hypertarget{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily \label{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8} 
+Player\+::\+Player (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Constructor to create a \doxylink{class_player}{Player}. Sets player name to "{}\+Unamed Player"{}, hand starts empty, and score starts at 0. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_player_a98d533161ecd23a97c7395f1d27769db}\index{Player@{Player}!addCard@{addCard}}
+\index{addCard@{addCard}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{addCard()}{addCard()}}
+{\footnotesize\ttfamily \label{class_player_a98d533161ecd23a97c7395f1d27769db} 
+void Player\+::add\+Card (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_card}{Card}}}]{new\+\_\+card}{}\end{DoxyParamCaption})}
+
+Adds a new card to the player\textquotesingle{}s hand. \doxylink{class_card}{Card} is placed at the back of the hand vector. 
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+card} & New card object to be added to the player\textquotesingle{}s hand. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_a3fd83a4baad6c02cf4728ebdc4b37367}\index{Player@{Player}!changeScoreBy@{changeScoreBy}}
+\index{changeScoreBy@{changeScoreBy}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{changeScoreBy()}{changeScoreBy()}}
+{\footnotesize\ttfamily \label{class_player_a3fd83a4baad6c02cf4728ebdc4b37367} 
+void Player\+::change\+Score\+By (\begin{DoxyParamCaption}\item[{int}]{to\+Add}{}\end{DoxyParamCaption})}
+
+Alter the player\textquotesingle{}s score by given integer. 
+\begin{DoxyParams}{Parameters}
+{\em to\+Add} & Score to add to player\textquotesingle{}s score. Score will be reduced if to\+Add is negative. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_a5715b0ace30c905ae79642e76a5437b4}\index{Player@{Player}!clearHand@{clearHand}}
+\index{clearHand@{clearHand}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{clearHand()}{clearHand()}}
+{\footnotesize\ttfamily \label{class_player_a5715b0ace30c905ae79642e76a5437b4} 
+void Player\+::clear\+Hand (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Clears the player\textquotesingle{}s hand. Removes all cards from the player\textquotesingle{}s hand permanently. \Hypertarget{class_player_a7b49f3469057c697779eec1baf69d264}\index{Player@{Player}!getCard@{getCard}}
+\index{getCard@{getCard}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getCard()}{getCard()}}
+{\footnotesize\ttfamily \label{class_player_a7b49f3469057c697779eec1baf69d264} 
+\mbox{\hyperlink{class_card}{Card}} Player\+::get\+Card (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+Removes and returns the card at the given index. Important to note is the card will be removed from the player\textquotesingle{}s hand. 
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the desired card. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_card}{Card} object of the card at the given index. 
+\end{DoxyReturn}
+\Hypertarget{class_player_a2753c9de00cd7a69929a24393e50d587}\index{Player@{Player}!getHand@{getHand}}
+\index{getHand@{getHand}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getHand()}{getHand()}}
+{\footnotesize\ttfamily \label{class_player_a2753c9de00cd7a69929a24393e50d587} 
+vector$<$ \mbox{\hyperlink{class_card}{Card}} $>$ Player\+::get\+Hand (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the entire hand of the player. \begin{DoxyReturn}{Returns}
+The vector containing \doxylink{class_card}{Card} objects. 
+\end{DoxyReturn}
+\Hypertarget{class_player_a349e345c332c57d681982ce06a1ba7e9}\index{Player@{Player}!getHandSize@{getHandSize}}
+\index{getHandSize@{getHandSize}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getHandSize()}{getHandSize()}}
+{\footnotesize\ttfamily \label{class_player_a349e345c332c57d681982ce06a1ba7e9} 
+int Player\+::get\+Hand\+Size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the number of cards in the player\textquotesingle{}s hand. \begin{DoxyReturn}{Returns}
+the size of hand. 
+\end{DoxyReturn}
+\Hypertarget{class_player_af9a6045fa96f736664c4eab4caa5e8e5}\index{Player@{Player}!getName@{getName}}
+\index{getName@{getName}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_player_af9a6045fa96f736664c4eab4caa5e8e5} 
+string Player\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the player\textquotesingle{}s name. \begin{DoxyReturn}{Returns}
+The name of the player. 
+\end{DoxyReturn}
+\Hypertarget{class_player_a97e5447778ae6c384eedc532dcd8431d}\index{Player@{Player}!getScore@{getScore}}
+\index{getScore@{getScore}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getScore()}{getScore()}}
+{\footnotesize\ttfamily \label{class_player_a97e5447778ae6c384eedc532dcd8431d} 
+int Player\+::get\+Score (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the player\textquotesingle{}s score. \begin{DoxyReturn}{Returns}
+\doxylink{class_player}{Player}\textquotesingle{}s score, given as an integer. 
+\end{DoxyReturn}
+\Hypertarget{class_player_a74f63b5d2d98396bb0bb2e40958abf71}\index{Player@{Player}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily \label{class_player_a74f63b5d2d98396bb0bb2e40958abf71} 
+bool Player\+::is\+Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true/false depending on whether there are any cards in the player\textquotesingle{}s hand. \begin{DoxyReturn}{Returns}
+boolean flag of if the player\textquotesingle{}s hand is empty. 
+\end{DoxyReturn}
+\Hypertarget{class_player_ae17df212fe69f5c493f0d083cb789e79}\index{Player@{Player}!outputHand@{outputHand}}
+\index{outputHand@{outputHand}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{outputHand()}{outputHand()}}
+{\footnotesize\ttfamily \label{class_player_ae17df212fe69f5c493f0d083cb789e79} 
+void Player\+::output\+Hand (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Iterates over all card objects in the player\textquotesingle{}s hand and outputs each card\textquotesingle{}s to\+String to terminal on separate lines. \Hypertarget{class_player_a80f84537be09ea913c5eea2e5b1ee5f3}\index{Player@{Player}!peekCard@{peekCard}}
+\index{peekCard@{peekCard}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{peekCard()}{peekCard()}}
+{\footnotesize\ttfamily \label{class_player_a80f84537be09ea913c5eea2e5b1ee5f3} 
+\mbox{\hyperlink{class_card}{Card}} Player\+::peek\+Card (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+Returns the card at the given index. Important to note is the card will not be removed from the player\textquotesingle{}s hand. 
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the desired card. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_card}{Card} object of the card at the given index. 
+\end{DoxyReturn}
+\Hypertarget{class_player_abd8d50b28edbe319e4b584b8e2840df2}\index{Player@{Player}!setName@{setName}}
+\index{setName@{setName}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily \label{class_player_abd8d50b28edbe319e4b584b8e2840df2} 
+void Player\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{new\+\_\+name}{}\end{DoxyParamCaption})}
+
+Sets the player\textquotesingle{}s name. 
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+name} & The new name of the player, as a string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_a70cf97b3bdeac621fad1a493644df96c}\index{Player@{Player}!setScore@{setScore}}
+\index{setScore@{setScore}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setScore()}{setScore()}}
+{\footnotesize\ttfamily \label{class_player_a70cf97b3bdeac621fad1a493644df96c} 
+void Player\+::set\+Score (\begin{DoxyParamCaption}\item[{int}]{new\+Score}{}\end{DoxyParamCaption})}
+
+Set a new score, overwriting the previous score. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Score} & New player score, given as an integer. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_player_a6bd45861da62c3f312f6af562872df39}\index{Player@{Player}!sumHand@{sumHand}}
+\index{sumHand@{sumHand}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{sumHand()}{sumHand()}}
+{\footnotesize\ttfamily \label{class_player_a6bd45861da62c3f312f6af562872df39} 
+int Player\+::sum\+Hand (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Calculates and returns the sum of all ranks from cards in the player\textquotesingle{}s hand. Important to note is face cards are interpreted as 11, 12, and 13. \begin{DoxyReturn}{Returns}
+Sum of all cards in player\textquotesingle{}s hand. 
+\end{DoxyReturn}
+

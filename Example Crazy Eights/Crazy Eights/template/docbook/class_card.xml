@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_card" xml:lang="en-US">
+<title>Card Class Reference</title>
+<indexterm><primary>Card</primary></indexterm>
+<para>
+
+<para><link linkend="_class_card">Card</link> class represents a single card when instantiated. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;Card.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_card_1a7baaf66f84b781cb4ea2f434b195a7d4">Card</link> (int init_rank, string init_suit)</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_card_1ab11d37fe0155982e834cd4c413322973">getRank</link> ()</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_card_1a6bda7d706eb87b009c94ae2a9654f6d9">getSuit</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_card_1ae5707270fd3ba3e432979f5d1e674940">setRank</link> (int new_rank)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_card_1ab689370ed2a5d9fa1aae8205389b0f8d">setSuit</link> (string new_suit)</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_card_1a40725f94d140308b3ec535ad00fd033d">toString</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><link linkend="_class_card">Card</link> class represents a single card when instantiated. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_card_1a7baaf66f84b781cb4ea2f434b195a7d4"/><section>
+    <title>Card()</title>
+<indexterm><primary>Card</primary><secondary>Card</secondary></indexterm>
+<indexterm><primary>Card</primary><secondary>Card</secondary></indexterm>
+<para><computeroutput>Card::Card (int init_rank, string init_suit)</computeroutput></para>
+<para>Constructor to create a card. Requires an initial Rank and Suit when created. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>init_rank</entry><entry>
+<para>An initial rank, as an integer (A=1, 2=2,... J=11, Q=12, K=13) </para>
+</entry>
+                            </row>
+                            <row>
+<entry>init_suit</entry><entry>
+<para>An initial suit, given as a string </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_card_1ab11d37fe0155982e834cd4c413322973"/><section>
+    <title>getRank()</title>
+<indexterm><primary>getRank</primary><secondary>Card</secondary></indexterm>
+<indexterm><primary>Card</primary><secondary>getRank</secondary></indexterm>
+<para><computeroutput>int Card::getRank ( )</computeroutput></para>
+<para>Get the card&apos;s rank. <formalpara><title>Returns</title>
+
+<para>The rank of the card as an integer. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_card_1a6bda7d706eb87b009c94ae2a9654f6d9"/><section>
+    <title>getSuit()</title>
+<indexterm><primary>getSuit</primary><secondary>Card</secondary></indexterm>
+<indexterm><primary>Card</primary><secondary>getSuit</secondary></indexterm>
+<para><computeroutput>string Card::getSuit ( )</computeroutput></para>
+<para>Get the card&apos;s suit. <formalpara><title>Returns</title>
+
+<para>The suit of the card as a string. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_card_1ae5707270fd3ba3e432979f5d1e674940"/><section>
+    <title>setRank()</title>
+<indexterm><primary>setRank</primary><secondary>Card</secondary></indexterm>
+<indexterm><primary>Card</primary><secondary>setRank</secondary></indexterm>
+<para><computeroutput>void Card::setRank (int new_rank)</computeroutput></para>
+<para>Set a new rank for the card. 
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>new_rank</entry><entry>
+<para>An integer of the new card rank. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_card_1ab689370ed2a5d9fa1aae8205389b0f8d"/><section>
+    <title>setSuit()</title>
+<indexterm><primary>setSuit</primary><secondary>Card</secondary></indexterm>
+<indexterm><primary>Card</primary><secondary>setSuit</secondary></indexterm>
+<para><computeroutput>void Card::setSuit (string new_suit)</computeroutput></para>
+<para>Set a new suit for the card.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>new_suit</entry><entry>
+<para>A string of the new card suit. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_card_1a40725f94d140308b3ec535ad00fd033d"/><section>
+    <title>toString()</title>
+<indexterm><primary>toString</primary><secondary>Card</secondary></indexterm>
+<indexterm><primary>Card</primary><secondary>toString</secondary></indexterm>
+<para><computeroutput>string Card::toString ( )</computeroutput></para>
+<para>Get a string representation of the card.</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>String representation of the card in the following format: &quot;[rank] of [suit]&quot;. </para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+Crazy Eights/template/Card.hCrazy Eights/template/Card.cpp</section>
+</section>

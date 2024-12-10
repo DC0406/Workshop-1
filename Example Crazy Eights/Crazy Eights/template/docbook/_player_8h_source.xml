@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__player_8h_source" xml:lang="en-US">
+<title>Player.h</title>
+<indexterm><primary>Crazy Eights/template/Player.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+2 <emphasis role="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+3 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+4 <emphasis role="preprocessor">#include&#32;&lt;vector&gt;</emphasis>
+5 <emphasis role="preprocessor">#include&#32;&quot;Card.h&quot;</emphasis>
+6 
+7 <emphasis role="keyword">using&#32;namespace&#32;</emphasis>std;
+8 
+9 
+14 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_player">Player</link>
+15 {
+16 <emphasis role="keyword">private</emphasis>:
+20 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;name;
+24 &#32;&#32;&#32;&#32;vector&lt;Card&gt;&#32;hand;
+28 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;score;
+29 
+30 <emphasis role="keyword">public</emphasis>:
+34 &#32;&#32;&#32;&#32;<link linkend="_class_player_1affe0cc3cb714f6deb4e62f0c0d3f1fd8">Player</link>();
+39 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_player_1af9a6045fa96f736664c4eab4caa5e8e5">getName</link>();
+40 
+45 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_player_1abd8d50b28edbe319e4b584b8e2840df2">setName</link>(<emphasis role="keywordtype">string</emphasis>&#32;new_name);
+50 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_player_1a349e345c332c57d681982ce06a1ba7e9">getHandSize</link>();
+55 &#32;&#32;&#32;&#32;vector&lt;Card&gt;&#32;<link linkend="_class_player_1a2753c9de00cd7a69929a24393e50d587">getHand</link>();
+59 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_player_1a5715b0ace30c905ae79642e76a5437b4">clearHand</link>();
+64 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_player_1a74f63b5d2d98396bb0bb2e40958abf71">isEmpty</link>();
+65 
+66 
+72 &#32;&#32;&#32;&#32;<link linkend="_class_card">Card</link>&#32;<link linkend="_class_player_1a80f84537be09ea913c5eea2e5b1ee5f3">peekCard</link>(<emphasis role="keywordtype">int</emphasis>&#32;index);
+78 &#32;&#32;&#32;&#32;<link linkend="_class_card">Card</link>&#32;<link linkend="_class_player_1a7b49f3469057c697779eec1baf69d264">getCard</link>(<emphasis role="keywordtype">int</emphasis>&#32;index);
+83 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_player_1a98d533161ecd23a97c7395f1d27769db">addCard</link>(<link linkend="_class_card">Card</link>&#32;new_card);
+84 
+89 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_player_1a6bd45861da62c3f312f6af562872df39">sumHand</link>();
+93 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_player_1ae17df212fe69f5c493f0d083cb789e79">outputHand</link>();
+94 
+99 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_player_1a3fd83a4baad6c02cf4728ebdc4b37367">changeScoreBy</link>(<emphasis role="keywordtype">int</emphasis>&#32;toAdd);
+104 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_player_1a70cf97b3bdeac621fad1a493644df96c">setScore</link>(<emphasis role="keywordtype">int</emphasis>&#32;newScore);
+109 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_player_1a97e5447778ae6c384eedc532dcd8431d">getScore</link>();
+110 };
+111 
+</programlisting></section>

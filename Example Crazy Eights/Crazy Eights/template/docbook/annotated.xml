@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_annotated" xml:lang="en-US">
+<title>Class List</title>
+Here are the classes, structs, unions and interfaces with brief descriptions:<link linkend="_class_card">Card</link>
+<para><link linkend="_class_card">Card</link> class represents a single card when instantiated </para>
+<link linkend="_class_deck">Deck</link>
+<para><link linkend="_class_deck">Deck</link> class represents a collection of cards in a vector format. Intended to represent a deck, however can be used for stock piles, discard piles, and other uses </para>
+<link linkend="_class_player">Player</link>
+<para><link linkend="_class_player">Player</link> class represents a single player, either human or bot. <link linkend="_class_player">Player</link> has a name, a hand, and a score. Class does not get input from terminal directly </para>
+</section>

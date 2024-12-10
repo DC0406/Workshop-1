@@ -1,0 +1,101 @@
+\doxysection{Card Class Reference}
+\hypertarget{class_card}{}\label{class_card}\index{Card@{Card}}
+
+
+\doxylink{class_card}{Card} class represents a single card when instantiated.  
+
+
+
+
+{\ttfamily \#include $<$template/Card.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_card_a7baaf66f84b781cb4ea2f434b195a7d4}{Card}} (int init\+\_\+rank, string init\+\_\+suit)
+\item 
+int \mbox{\hyperlink{class_card_ab11d37fe0155982e834cd4c413322973}{get\+Rank}} ()
+\item 
+string \mbox{\hyperlink{class_card_a6bda7d706eb87b009c94ae2a9654f6d9}{get\+Suit}} ()
+\item 
+void \mbox{\hyperlink{class_card_ae5707270fd3ba3e432979f5d1e674940}{set\+Rank}} (int new\+\_\+rank)
+\item 
+void \mbox{\hyperlink{class_card_ab689370ed2a5d9fa1aae8205389b0f8d}{set\+Suit}} (string new\+\_\+suit)
+\item 
+string \mbox{\hyperlink{class_card_a40725f94d140308b3ec535ad00fd033d}{to\+String}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_card}{Card} class represents a single card when instantiated. 
+
+\doxysubsection{Constructor  Documentation}
+\Hypertarget{class_card_a7baaf66f84b781cb4ea2f434b195a7d4}\index{Card@{Card}!Card@{Card}}
+\index{Card@{Card}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{Card()}{Card()}}
+{\footnotesize\ttfamily \label{class_card_a7baaf66f84b781cb4ea2f434b195a7d4} 
+Card\+::\+Card (\begin{DoxyParamCaption}\item[{int}]{init\+\_\+rank}{, }\item[{string}]{init\+\_\+suit}{}\end{DoxyParamCaption})}
+
+Constructor to create a card. Requires an initial Rank and Suit when created. 
+\begin{DoxyParams}{Parameters}
+{\em init\+\_\+rank} & An initial rank, as an integer (A=1, 2=2,... J=11, Q=12, K=13) \\
+\hline
+{\em init\+\_\+suit} & An initial suit, given as a string \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_card_ab11d37fe0155982e834cd4c413322973}\index{Card@{Card}!getRank@{getRank}}
+\index{getRank@{getRank}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{getRank()}{getRank()}}
+{\footnotesize\ttfamily \label{class_card_ab11d37fe0155982e834cd4c413322973} 
+int Card\+::get\+Rank (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the card\textquotesingle{}s rank. \begin{DoxyReturn}{Returns}
+The rank of the card as an integer. 
+\end{DoxyReturn}
+\Hypertarget{class_card_a6bda7d706eb87b009c94ae2a9654f6d9}\index{Card@{Card}!getSuit@{getSuit}}
+\index{getSuit@{getSuit}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{getSuit()}{getSuit()}}
+{\footnotesize\ttfamily \label{class_card_a6bda7d706eb87b009c94ae2a9654f6d9} 
+string Card\+::get\+Suit (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the card\textquotesingle{}s suit. \begin{DoxyReturn}{Returns}
+The suit of the card as a string. 
+\end{DoxyReturn}
+\Hypertarget{class_card_ae5707270fd3ba3e432979f5d1e674940}\index{Card@{Card}!setRank@{setRank}}
+\index{setRank@{setRank}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{setRank()}{setRank()}}
+{\footnotesize\ttfamily \label{class_card_ae5707270fd3ba3e432979f5d1e674940} 
+void Card\+::set\+Rank (\begin{DoxyParamCaption}\item[{int}]{new\+\_\+rank}{}\end{DoxyParamCaption})}
+
+Set a new rank for the card. 
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+rank} & An integer of the new card rank. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_card_ab689370ed2a5d9fa1aae8205389b0f8d}\index{Card@{Card}!setSuit@{setSuit}}
+\index{setSuit@{setSuit}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{setSuit()}{setSuit()}}
+{\footnotesize\ttfamily \label{class_card_ab689370ed2a5d9fa1aae8205389b0f8d} 
+void Card\+::set\+Suit (\begin{DoxyParamCaption}\item[{string}]{new\+\_\+suit}{}\end{DoxyParamCaption})}
+
+Set a new suit for the card.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+suit} & A string of the new card suit. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_card_a40725f94d140308b3ec535ad00fd033d}\index{Card@{Card}!toString@{toString}}
+\index{toString@{toString}!Card@{Card}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{class_card_a40725f94d140308b3ec535ad00fd033d} 
+string Card\+::to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get a string representation of the card.
+
+\begin{DoxyReturn}{Returns}
+String representation of the card in the following format\+: "{}\mbox{[}rank\mbox{]} of \mbox{[}suit\mbox{]}"{}. 
+\end{DoxyReturn}
